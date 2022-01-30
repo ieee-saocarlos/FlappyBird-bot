@@ -7,16 +7,20 @@ Baseado no método de otimização `Algoritmo Genético`, cada passaro possui um
 
 ![](./images/image.png)
 
-Cada passaro recebe do jogo informações referentes a sua posição relativa ao próximo cano:
+Cada passaro recebe do jogo informações referentes a sua posição relati va ao próximo cano:
 * `d` é a distancia horizontal entre o passaro e o cano, 
 * `h1` é a distancia vertical ao cano de cima enquanto 
 * `h2` é a distancia verical ate o cano de baixo
 
-A lógica de decisão é equivalente ao calculo feito por uma rede neural de uma unica camada com um unico neuronio. Os pesos são:<center><img src="https://render.githubusercontent.com/render/math?math={\color{yellow}w_1, w_2, w_3, b}"></center>
+A lógica de decisão é equivalente ao calculo feito por uma rede neural de uma unica camada com um unico neuronio. Os pesos são:
 
-<center>
+<p align="center">
+    <img src="https://render.githubusercontent.com/render/math?math={\color{yellow}w_1, w_2, w_3, b}">
+    </p>
+
+<p align="center">
 <img src="https://render.githubusercontent.com/render/math?math={\color{yellow}tanh([d, h_1, h_2]\cdot[w_1, w_2, w_3]' + b) > 0.5 \Rightarrow Pula}">
-</center>
+</p>
 
 * `cross_over:` 2 individuos selecionados trocam entre si os valores de um de seus pesos
 * `mutation:` o valor do peso é ligeiramente modificado somando-se um valor aleatorio
