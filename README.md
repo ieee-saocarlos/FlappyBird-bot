@@ -12,10 +12,10 @@ Cada passaro recebe do jogo informações referentes a sua posição relativa ao
 * `h1` é a distancia vertical ao cano de cima enquanto 
 * `h2` é a distancia verical ate o cano de baixo
 
-A lógica de decisão é equivalente ao calculo feito por uma rede neural de uma unica camada com um unico neuronio. Os pesos são $w_1, w_2, w_3, b$
-> $tanh([d, h_1, h_2]\cdot[w_1, w_2, w_3]' + b) > 0.5 \Rightarrow Pula$
+A lógica de decisão é equivalente ao calculo feito por uma rede neural de uma unica camada com um unico neuronio. Os pesos são <img src="https://render.githubusercontent.com/render/math?math={\color{yellow}w_1, w_2, w_3, b}">
 
-Os pesos do neuronio são atualizados utilizando Algoritmo Genetico:
+<img src="https://render.githubusercontent.com/render/math?math={\color{yellow}tanh([d, h_1, h_2]\cdot[w_1, w_2, w_3]' + b) > 0.5 \Rightarrow Pula}">
+
 * `cross_over:` 2 individuos selecionados trocam entre si os valores de um de seus pesos
 * `mutation:` o valor do peso é ligeiramente modificado somando-se um valor aleatorio
 
