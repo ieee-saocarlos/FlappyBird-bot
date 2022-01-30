@@ -7,8 +7,8 @@ Baseado no método de otimização `Algoritmo Genético`, cada passaro possui um
 
 ![](./images/image.png)
 
-Cada passaro recebe do jogo informações referentes a sua posição relati va ao próximo cano:
-* `d` é a distancia horizontal entre o passaro e o cano, 
+Cada passaro recebe do jogo informações referentes a sua posição relativa ao próximo cano:
+* `d` é a distancia horizontal entre o cano e a borda da tela, 
 * `h1` é a distancia vertical ao cano de cima enquanto 
 * `h2` é a distancia verical ate o cano de baixo
 
